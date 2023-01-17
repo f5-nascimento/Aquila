@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!--Fontes Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <!--Compatibilidade de browser-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Responsividade-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQUILA</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="container">
+
+    <h1>Cadastro de Lançamento Financeiro</h1>
+    
+    <form id="form" action="" method="post">
+
+
+      <div id="data_lancamento">
+         <label for="data">Data:</label>
+         <input type="date" name="Data" id="data" required><br>
+      </div>
+      
+      <div id="descricao_lancamento">
+        <label for="descricao">Descrição:</label>
+        <input type="text" name="Descrição" id="descricao" 
+        placeholder="Digite a descrição do lançamento" required>
+      </div>
+
+      <div id="observacao_lancamento">
+        <label for="observacao">Observação:</label>
+        <input type="text" name="Observação" id="observacao" placeholder="Digite a observacão do lançamento" required>
+      </div>
+
+      <div id="movimento_lancamento">
+         <label for="movimento" >Movimento:</label>
+         <select name="Movimento" id="movimento">
+            <option disabled selected>Escolha um movimento</option>
+            <option value="Saldo">Saldo</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Saída">Saída</option>
+         </select>
+       </div>
+
+       <div id="valor_lancamento">
+        <label for="valor">Valor:</label>
+        <input type="text" name="Valor" id="descricao" placeholder="Digite o valor do lançamento" required>
+      </div>
+
+      <div id="finalidade_lancamento">
+        <label for="finalidade">Finalidade:</label>
+        <input type="text" name="Finalidade" id="finalidade" placeholder="Digite a finalidade do lançamento" required>
+      </div>
+              
+      <div id="btn">            
+      <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>
+      </div>
+                    
+                    
+                
+    </form>
+      
+  </div>
+
+   <footer>
+      Acesse os dados cadastrados <a href="https://www.rocketseat.com.br" target="_blank">aqui</a>
+    </footer>
+
+    
+  <script src="./script.js"></script>
+
+
+</body>
+</html>
